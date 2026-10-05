@@ -1,4 +1,6 @@
-# Programa que calcula a média ponderada de três avaliações
+# Programa que calcula a média ponderada de três avaliações usando uma função
+
+from funcoes_notas import media_ponderada_tres_notas
 
 # Entrada de dados
 print()
@@ -12,7 +14,7 @@ nota3 = float(input("Digite a nota da 3ª avaliação (peso 5): "))
 print()
 
 # Processamento
-media = (nota1 * 2 + nota2 * 3 + nota3 * 5) / (2 + 3 + 5)
+media = media_ponderada_tres_notas(nota1, nota2, nota3)
 
 # Saída de dados
 print(f"A média ponderada das três avaliações é: {media:.2f}")
